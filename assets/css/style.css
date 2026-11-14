@@ -1,0 +1,342 @@
+/* Custom Styles for Grocery Store */
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.owner-layout-page {
+    overflow-x: hidden;
+}
+
+.owner-sidebar {
+    width: 250px;
+    min-height: 100vh;
+}
+
+.owner-main {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+}
+
+.sidebar .nav-link {
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #28a745;
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Product Card Styles */
+.product-card {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-card .card-body {
+    padding: 15px;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Statistics Cards */
+.stat-card {
+    border-left: 4px solid #28a745;
+}
+
+.stat-card .icon {
+    font-size: 2rem;
+    color: #28a745;
+}
+
+.stat-card .number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Table Styles */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #28a745;
+    color: white;
+}
+
+.table th {
+    border: none;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Badge Styles */
+.badge-ordered {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-delivered {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-cancelled {
+    background-color: #dc3545;
+    color: white;
+}
+
+.badge-returned {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Image Preview */
+.image-preview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #dee2e6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        height: auto;
+    }
+
+    .owner-sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .owner-main {
+        margin-left: 0;
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .sidebar .nav-link {
+        padding: 8px 15px;
+    }
+    
+    .product-card img {
+        height: 150px;
+    }
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.05);
+}
+
+.dashboard-card.success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.dashboard-card.info {
+    background: linear-gradient(135deg, #17a2b8, #6610f2);
+}
+
+.dashboard-card.warning {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+}
+
+.dashboard-card.danger {
+    background: linear-gradient(135deg, #dc3545, #e83e8c);
+}
+
+.dashboard-card .icon {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.dashboard-card .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Order Status Timeline */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #28a745;
+}
+
+/* Location Map Placeholder */
+.map-placeholder {
+    background-color: #e9ecef;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+}
+
+/* Bill Template */
+.bill-template {
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bill-header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.bill-total {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Cart Styles */
+.cart-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-total {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Delivery Info */
+.delivery-info {
+    background-color: #e8f5e9;
+    border-left: 4px solid #28a745;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.free-delivery {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.paid-delivery {
+    color: #dc3545;
+    font-weight: bold;
+}
