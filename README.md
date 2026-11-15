@@ -7,9 +7,9 @@ A complete PHP-based grocery store management system with owner and customer por
 # ✨video proof
 ## https://drive.google.com/file/d/1XQ7kQeXyRWuTNX_sMJipLFIRGbNlQ0lP/view?usp=drivesdk
 
-## Features
+## Features🛒
 
-### For Shop Owner
+### For Shop Owner🙎
 - **Dashboard**: Real-time statistics of products, customers, orders, and revenue
 - **Product Management**: Add, edit, delete, and manage products with images
 - **Customer Management**: View and manage customer accounts
@@ -17,7 +17,7 @@ A complete PHP-based grocery store management system with owner and customer por
 - **Reports**: Daily reports with total orders, successful deliveries, pending orders, and revenue
 - **Location Settings**: Set shop location for delivery distance calculations
 
-### For Customers
+### For Customers🚶‍♂️‍➡️
 - **User Registration**: Easy registration with name, email, phone, and password
 - **Product Browsing**: View available products with images, categories, and prices
 - **Order Placement**: Add products to cart and place orders
