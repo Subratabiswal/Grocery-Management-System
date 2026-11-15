@@ -1,10 +1,11 @@
-# Grocery-Management-System
 # Online Grocery Store Management System
 
 A complete PHP-based grocery store management system with owner and customer portals, featuring location-based delivery pricing, order management, and comprehensive reporting.
 
 <img width="1562" height="720" alt="Screenshot 2026-11-14 231956" src="https://github.com/user-attachments/assets/ede9ee4a-baa3-4766-8a05-d8242e3b60d1" />
 
+# video proof
+## https://drive.google.com/file/d/1XQ7kQeXyRWuTNX_sMJipLFIRGbNlQ0lP/view?usp=drivesdk
 
 ## Features
 
